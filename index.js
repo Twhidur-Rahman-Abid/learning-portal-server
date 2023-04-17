@@ -10,6 +10,7 @@ server.use(middlewares);
 server.use(auth);
 server.use(router);
 
+server.db = router.db;
 // Set default middlewares (logger, static, cors, etc.)
 server.use(middlewares);
 server.use(jsonServer.bodyParser); // Required to parse POST requests
