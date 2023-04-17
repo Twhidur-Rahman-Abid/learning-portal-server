@@ -15,32 +15,31 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser); // Required to parse POST requests
 
 // Add custom routes before JSON Server router
-server.post("/login", (req, res) => {
-  const { email, password } = req.body;
-  const users = router.db.get("users").value();
-  const user = users.find((u) => u.email === email && u.password === password);
-  if (user) {
-    res.jsonp({ success: true, message: "Logged in successfully", user });
-  } else {
-    res.jsonp({ success: false, message: "Invalid username or password" });
-  }
-});
+// server.post("/login", (req, res) => {
+//   const { email, password } = req.body;
+//   const users = router.db.get("users").value();
+//   const user = users.find((u) => u.email === email && u.password === password);
+//   if (user) {
+//     res.jsonp({ success: true, message: "Logged in successfully", user });
+//   } else {
+//     res.jsonp({ success: false, message: "Invalid username or password" });
+//   }
+// });
 
-server.post("/register", (req, res) => {
-  const { name, password, email } = req.body;
-  const users = router.db.get("users").value();
-  const userExists = users.some((u) => u.name === name || u.email === email);
-  if (userExists) {
-    res.jsonp({ success: false, message: "Username or email already exists" });
-  } else {
-    const user = { id: Date.now(), username, password, email };
-    router.db.get("users").push(user).write();
-    res.jsonp({ success: true, message: "Registered successfully", user });
-  }
-});
+// server.post("/register", (req, res) => {
+//   const { name, password, email } = req.body;
+//   const users = router.db.get("users").value();
+//   const userExists = users.some((u) => u.name === name || u.email === email);
+//   if (userExists) {
+//     res.jsonp({ success: false, message: "Username or email already exists" });
+//   } else {
+//     const user = { id: Date.now(), username, password, email };
+//     router.db.get("users").push(user).write();
+//     res.jsonp({ success: true, message: "Registered successfully", user });
+//   }
+// });
 
 // Use default JSON Server router
-server.use(router);
 
 // Start server
 
