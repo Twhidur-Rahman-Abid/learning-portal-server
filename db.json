@@ -48,6 +48,13 @@
       "role": "student",
       "name": "Arif",
       "id": 7
+    },
+    {
+      "email": "t1@gmail.com",
+      "password": "$2a$10$oDnFtaN6QNRJgj7UtKm6iuSde.cVImoIzrlLzGLhTTGD5SJYCweKi",
+      "name": "towhidur rahman abid",
+      "role": "student",
+      "id": 8
     }
   ],
   "videos": [
@@ -68,6 +75,18 @@
       "views": "91.2K",
       "duration": "31:30",
       "createdAt": "2023-02-24T17:59:00.000Z"
+    },
+    {
+      "title": "Debounce Function in JavaScript - JavaScript Job Interview question 1",
+      "description": "In this video, I have explained about the debounce function in JavaScript. This is a common question interviewers ask at Job Interviews. If you watch this video carefully, you will understand what is debounce and how to handle it with custom debounce function.",
+      "url": "https://www.youtube.com/embed/dD9O8DnIBj4",
+      "views": "12.2k",
+      "duration": "3:30",
+      "createdAt": "2023-04-16T21:13:20.567Z",
+      "id": 3
+    },
+    {
+      "id": 4
     }
   ],
   "assignments": [
