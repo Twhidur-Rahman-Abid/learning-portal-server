@@ -1,16 +1,11 @@
-// const jsonServer = require("json-server"); // importing json-server library
-// const server = jsonServer.create();
-// const router = jsonServer.router("db.json");
-// const middlewares = jsonServer.defaults();
-// const port = process.env.PORT || 9000; //  chose port from here like 8080, 3001
-
-// server.use(middlewares);
-// server.use(router);
-
-const jsonServer = require("json-server");
+const jsonServer = require("json-server"); // importing json-server library
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 9000; //  chose port from here like 8080, 3001
+
+server.use(middlewares);
+server.use(router);
 
 // Set default middlewares (logger, static, cors, etc.)
 server.use(middlewares);
@@ -45,7 +40,7 @@ server.post("/register", (req, res) => {
 server.use(router);
 
 // Start server
-const port = process.env.PORT || 9000;
+
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });
