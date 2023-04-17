@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 9000; //  chose port from here like 8080, 3001
 
 server.use(middlewares);
-app.use(auth);
+server.use(auth);
 server.use(router);
 
 // Set default middlewares (logger, static, cors, etc.)
