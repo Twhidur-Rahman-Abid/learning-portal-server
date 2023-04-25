@@ -55,6 +55,13 @@
       "name": "towhidur rahman abid",
       "role": "student",
       "id": 8
+    },
+    {
+      "email": "t111@gmail.com",
+      "password": "$2a$10$AjlqwSrv/7kWpQF7OW8spOjLgaqTfxNn588KLxFHFL1qjswr84SSK",
+      "name": "Towhidur Rahman Abid",
+      "role": "student",
+      "id": 9
     }
   ],
   "videos": [
@@ -85,9 +92,6 @@
       "createdAt": "2023-04-16T21:13:20.567Z",
       "id": 3
     },
-    {
-      "id": 4
-    }
   ],
   "assignments": [
     {
@@ -189,6 +193,34 @@
           "isCorrect": false
         }
       ]
+    },
+    {
+      "question": "hiii",
+      "video_id": 2,
+      "video_title": "#2 JavaScript Tips and Tricks - JavaScript Job Interview Questions",
+      "options": [
+        {
+          "id": 1,
+          "option": "hu",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "option": "hu",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "option": "hi",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "option": "hi",
+          "isCorrect": false
+        }
+      ],
+      "id": 4
     }
   ],
   "assignmentMark": [
@@ -200,9 +232,9 @@
       "title": "Assignment 1 - Implement Debounce Function",
       "createdAt": "2021-01-15T15:17:01.727Z",
       "totalMark": 100,
-      "mark": 0,
+      "mark": "50",
       "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
-      "status": "pending"
+      "status": "published"
     },
     {
       "id": 2,
@@ -227,6 +259,30 @@
       "mark": 50,
       "repo_link": "https://github.com/Learn-with-Sumit/assignment-1",
       "status": "published"
+    },
+    {
+      "student_id": 9,
+      "student_name": "Towhidur Rahman Abid",
+      "assignment_id": 1,
+      "title": "Assignment 1 - Implement Debounce Function",
+      "totalMark": 100,
+      "mark": "100",
+      "createdAt": "2023-04-25T10:42:54.472Z",
+      "repo_link": "afsfdgfs",
+      "status": "published",
+      "id": 3
+    },
+    {
+      "student_id": 9,
+      "student_name": "Towhidur Rahman Abid",
+      "assignment_id": 2,
+      "title": "Assignment 2 - Implement Best Practices",
+      "totalMark": 100,
+      "mark": "100",
+      "createdAt": "2023-04-25T10:43:10.308Z",
+      "repo_link": "dfafss",
+      "status": "published",
+      "id": 4
     }
   ],
   "quizMark": [
@@ -241,6 +297,30 @@
       "totalWrong": 1,
       "totalMark": 10,
       "mark": 5
+    },
+    {
+      "student_id": 3,
+      "student_name": "Akash Ahmed",
+      "video_id": "1",
+      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "totalQuiz": 2,
+      "totalCorrect": 2,
+      "totalWrong": 0,
+      "totalMark": 10,
+      "mark": 10,
+      "id": 2
+    },
+    {
+      "student_id": 9,
+      "student_name": "Towhidur Rahman Abid",
+      "video_id": "1",
+      "video_title": "Debounce Function in JavaScript - JavaScript Job Interview question",
+      "totalQuiz": 2,
+      "totalCorrect": 2,
+      "totalWrong": 0,
+      "totalMark": 10,
+      "mark": 10,
+      "id": 3
     }
   ]
 }
