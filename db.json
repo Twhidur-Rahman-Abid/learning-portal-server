@@ -9,7 +9,7 @@
     },
     {
       "email": "admin@gamil.com",
-      "password": "admin",
+      "password": "$2a$10$2X2XQsbdIRGWQCHGjEvYdeVhh0VaNgQSyr7LA2/v4EjQ2mE/wPOiS",
       "role": "admin",
       "name": "LWS Admin",
       "id": 1
