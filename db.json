@@ -8,6 +8,13 @@
       "id": 1
     },
     {
+      "email": "admin@gamil.com",
+      "password": "admin",
+      "role": "admin",
+      "name": "LWS Admin",
+      "id": 1
+    },
+    {
       "email": "saad.hasan@learnwithsumit.com",
       "password": "$2a$10$4iJEmSkM1Dq6WMRb0SuJeeic1SEB9TrH3gw5IT441Adox/ZZXj2Ae",
       "role": "student",
